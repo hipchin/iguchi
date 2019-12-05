@@ -52,7 +52,11 @@ body {
     @include title(30px, black);
   }
   .section_title_text {
-    @include text(12px, black);
+    @include text(12px,black);
+  }
+  .section_guide {
+    @include text(10px, $black)
+    margin-top: 20px;
   }
 }
 

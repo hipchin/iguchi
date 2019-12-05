@@ -148,6 +148,15 @@ body {
   letter-spacing: 2px;
 }
 
+.section_title_wrap .section_guide {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10px;
+  color: #333333;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
 #top_return_bt {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
