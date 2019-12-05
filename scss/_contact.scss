@@ -1,0 +1,40 @@
+#contact {
+    padding: 100px 0;
+    .contact_text {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .contact_bt_wrap ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .contact_bt {
+        @include title (1.7vw,$white);
+        width: 15%;
+        height: 50px;
+        border: 1px solid none;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:nth-child(1) {
+            background-color: #FF3333;
+        }
+
+        &:nth-child(2) {
+            background-color: #1877f2;
+        }
+        &:nth-child(3) {
+            background-color: #55acee;
+        }
+        &:hover{
+            opacity: 0.6;
+            cursor: pointer;
+            cursor: hand;
+        }
+        & i {
+            margin-left: 10px;
+        }
+    }
+}

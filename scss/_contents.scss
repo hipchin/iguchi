@@ -1,0 +1,31 @@
+#contents {
+    padding-bottom: 100px;
+}
+.photo_item_wrap {
+    @include size;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0 100px 0;
+        .photo_item {
+            width: 30%;
+            &:hover{
+                opacity: 0.7;
+                cursor: pointer;
+                cursor: hand;
+            }
+            img{
+                @include size;
+            }
+            .photo_item_title{
+                @include title (20px,$black);
+                text-align: center;
+            }
+            .photo_item_text {
+                @include text (12px,$black);
+                text-align: center;
+            }
+        }
+}
+

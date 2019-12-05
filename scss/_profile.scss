@@ -1,0 +1,50 @@
+#profile {
+    @include size;
+    background-image: url(../img/6c9a7d0fe93c905b590ed8c2b2bc7439_l.jpg);
+    background-size: cover;
+    .profile_filter {
+        background-color: #333333;
+        opacity: 0.9;
+        padding:100px 0;
+        height: 100%;
+    }
+    .section_title, .section_title_text{
+        color: $white;
+    }
+
+}
+
+.profile_wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    .profile_img {
+        overflow: hidden;
+        width: 50%;
+        height: 100%;
+        filter: grayscale(90%);
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.pf_text_wrap {
+    width: 50%;
+    margin-left: 40px;
+    .pf_text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        word-wrap: break-word;
+        & li:not(:first-child){
+            @include title(14px,$white);
+        }
+        & li:nth-child(1){
+            @include title(20px,$white);
+        }
+        
+    }
+}

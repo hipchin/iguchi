@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+}
+
+.hd_wrap {
+    padding: 40px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    #menu {
+        width: 40%;
+        display: flex;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            .menu_nav {
+                width: 33%;
+                text-align: right;
+                letter-spacing: 2px;
+                & a:hover {
+                    opacity: 0.6;
+                    cursor: pointer;
+                    cursor: hand;
+                }
+            }
+        }
+    }
+}
+
+.hd_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        @include text(12px,$black)
+    }
+    h1 {
+        @include title(20px,$black);
+    }
+}

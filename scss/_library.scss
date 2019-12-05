@@ -1,0 +1,80 @@
+//////////
+////変数///
+//////////
+
+$mainfont: "Times New Roman", Times, serif;
+$subfont: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$white: white;
+$black: #333333;
+
+//                //
+//       mixin    //
+//                //
+
+@mixin title($size, $color) {
+  font-size: $size;
+  color: $color;
+  letter-spacing: 1.5px;
+}
+
+@mixin text($size, $color) {
+  font-family: $subfont;
+  font-size: $size;
+  color: $color;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+@mixin size {
+  width: 100%;
+  height: 100%;
+}
+
+//                //
+//    共通のcss    //
+//                //
+body {
+  font-family: $mainfont;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+
+.section_title_wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .section_title {
+    @include title(30px, black);
+  }
+  .section_title_text {
+    @include text(12px, black);
+  }
+}
+
+//////トップへ戻るボタン/////
+#top_return_bt {
+  @include text(14px, white);
+  display: flex;
+  position: fixed;
+  z-index: 80;
+  background: black;
+  letter-spacing: 6px;
+  width: 5vw;
+  padding: 20px;
+  justify-content: center;
+  border: 1px solid white;
+  bottom: 5px;
+  right: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    cursor: hand;
+  }
+}

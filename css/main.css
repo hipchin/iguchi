@@ -1,0 +1,493 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1.5;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+
+.section_title_wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section_title_wrap .section_title {
+  font-size: 30px;
+  color: black;
+  letter-spacing: 1.5px;
+}
+
+.section_title_wrap .section_title_text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  color: black;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+#top_return_bt {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 80;
+  background: black;
+  letter-spacing: 6px;
+  width: 5vw;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid white;
+  bottom: 5px;
+  right: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+#top_return_bt:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  cursor: hand;
+}
+
+header {
+  width: 100%;
+}
+
+.hd_wrap {
+  padding: 40px 20px 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hd_wrap #menu {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hd_wrap #menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hd_wrap #menu ul .menu_nav {
+  width: 33%;
+  text-align: right;
+  letter-spacing: 2px;
+}
+
+.hd_wrap #menu ul .menu_nav a:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.hd_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hd_title p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  color: #333333;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.hd_title h1 {
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: 1.5px;
+}
+
+.firstview {
+  height: 100vh;
+}
+
+.fv_img_wrap {
+  width: 100%;
+  height: 80%;
+}
+
+.fv_img_wrap .fv_img {
+  background-image: url(../img/sky.jpg);
+  background-size: 1300px,770px;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fv_img_wrap .fv_text {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding-top: 50px;
+  line-height: 1;
+}
+
+.fv_img_wrap .fv_title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 55px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding: 100px 0 0 45px;
+}
+
+#contents {
+  padding-bottom: 100px;
+}
+
+.photo_item_wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0 100px 0;
+}
+
+.photo_item_wrap .photo_item {
+  width: 30%;
+}
+
+.photo_item_wrap .photo_item:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.photo_item_wrap .photo_item img {
+  width: 100%;
+  height: 100%;
+}
+
+.photo_item_wrap .photo_item .photo_item_title {
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.photo_item_wrap .photo_item .photo_item_text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  color: #333333;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#profile {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/6c9a7d0fe93c905b590ed8c2b2bc7439_l.jpg);
+  background-size: cover;
+}
+
+#profile .profile_filter {
+  background-color: #333333;
+  opacity: 0.9;
+  padding: 100px 0;
+  height: 100%;
+}
+
+#profile .section_title, #profile .section_title_text {
+  color: white;
+}
+
+.profile_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.profile_wrap .profile_img {
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+}
+
+.profile_wrap .profile_img img {
+  width: 100%;
+}
+
+.pf_text_wrap {
+  width: 50%;
+  margin-left: 40px;
+}
+
+.pf_text_wrap .pf_text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  word-wrap: break-word;
+}
+
+.pf_text_wrap .pf_text li:not(:first-child) {
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.pf_text_wrap .pf_text li:nth-child(1) {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+#contact {
+  padding: 100px 0;
+}
+
+#contact .contact_text {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#contact .contact_bt_wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+#contact .contact_bt {
+  font-size: 1.7vw;
+  color: white;
+  letter-spacing: 1.5px;
+  width: 15%;
+  height: 50px;
+  border: 1px solid none;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .contact_bt:nth-child(1) {
+  background-color: #FF3333;
+}
+
+#contact .contact_bt:nth-child(2) {
+  background-color: #1877f2;
+}
+
+#contact .contact_bt:nth-child(3) {
+  background-color: #55acee;
+}
+
+#contact .contact_bt:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#contact .contact_bt i {
+  margin-left: 10px;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #333333;
+}
+
+footer .license {
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+footer .license::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid white;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=main.css.map */
